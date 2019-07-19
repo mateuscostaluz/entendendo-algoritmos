@@ -10,12 +10,12 @@ int pesquisa_binaria(int v[], int inicio, int fim, int meio, int x) {
     else if(x < v[meio]) {
         fim = meio - 1;
         int meio = (inicio + fim) / 2;
-        return pesquisa_binaria(v, inicio, fim, meio, x);
+        pesquisa_binaria(v, inicio, fim, meio, x);
     }
     else if(x > v[meio]){
         inicio = meio + 1;
         int meio = (inicio + fim) / 2;
-        return pesquisa_binaria(v, inicio, fim, meio, x);
+        pesquisa_binaria(v, inicio, fim, meio, x);
     }
 }
 
